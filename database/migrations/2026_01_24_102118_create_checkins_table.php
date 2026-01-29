@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('out')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->foreignId('user_id')->nullable();->references('id')->on('users');
+            $table->foreignId('user_id')->nullable()->references('id')->on('users');
             $table->timestamps();
         });
     }
